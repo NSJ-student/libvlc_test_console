@@ -1,0 +1,300 @@
+[New Thread 9544.0x2148]
+warning: main inhibit debug: using inhibit module "inhibit"
+[New Thread 9544.0x638]
+warning: main video output debug: Opening vout display wrapper
+warning: main vout display debug: looking for vout display module matching "any"
+: 12 candidates
+warning: live555 demux debug: tk->rtpSource->hasBeenSynchronizedUsingRTCP()
+warning: main input debug: ES_OUT_RESET_PCR called
+warning: main input debug: Buffering 0%
+warning: direct3d11 vout display debug: creating Vout EventThread
+[New Thread 9544.0x2868]
+warning: main input debug: Buffering 26%
+warning: direct3d11 vout display debug: Win32VoutCreateWindow
+warning: main vout display debug: VoutDisplayEvent 'resize' 640x480
+warning: main input debug: Buffering 29%
+warning: main input debug: Buffering 33%
+warning: main input debug: Buffering 36%
+warning: main input debug: Buffering 39%
+warning: main input debug: Buffering 43%
+warning: main input debug: Buffering 46%
+warning: main input debug: Buffering 49%
+warning: main input debug: Buffering 53%
+warning: main input debug: Buffering 56%
+warning: main input debug: Buffering 59%
+warning: main input debug: Buffering 63%
+warning: main input debug: Buffering 66%
+warning: main input debug: Buffering 69%
+warning: main input debug: Buffering 73%
+warning: main input debug: Buffering 76%
+warning: main input debug: Buffering 79%
+warning: main input debug: Buffering 83%
+warning: main input debug: Buffering 86%
+warning: main input debug: Buffering 89%
+warning: main input debug: Buffering 93%
+warning: main input debug: Buffering 96%
+warning: main input debug: Buffering 99%
+warning: main input debug: Stream buffering done (1033 ms in 812 ms)
+warning: direct3d11 vout display debug: inclinometer not found. (hr=0x80070490)
+warning: direct3d11 vout display debug: created video sub-window
+warning: direct3d11 vout display debug: Vout EventThread running
+[New Thread 9544.0x2744]
+[Thread 9544.0x2744 exited with code 0]
+[New Thread 9544.0x200c]
+[Thread 9544.0x200c exited with code 0]
+warning: direct3d11 vout display debug: Incompatible feature level 9300
+warning: direct3d11 vout display error: Could not Create the D3D11 device. (hr=0
+x80004001)
+warning: direct3d11 vout display error: Direct3D11 could not be opened
+warning: direct3d11 vout display debug: Direct3D11 resources destroyed
+warning: direct3d11 vout display debug: Direct3D11 device adapter closed
+[New Thread 9544.0x2638]
+[New Thread 9544.0x22d4]
+warning: direct3d11 vout display error: SetThumbNailClip failed: 0x800706f4
+warning: direct3d11 vout display debug: Win32 Vout EventThread terminating
+warning: direct3d11 vout display debug: Win32VoutCloseWindow
+warning: direct3d11 vout display debug: WinProc WM_DESTROY
+[Thread 9544.0x2868 exited with code 0]
+[New Thread 9544.0x2900]
+[Thread 9544.0x2900 exited with code 0]
+warning: direct3d9 vout display debug: Using Direct3D9 Extended API!
+warning: direct3d9 vout display debug: creating Vout EventThread
+[New Thread 9544.0x203c]
+warning: direct3d9 vout display debug: Win32VoutCreateWindow
+warning: main vout display debug: VoutDisplayEvent 'resize' 640x480
+warning: direct3d9 vout display debug: inclinometer not found. (hr=0x80070490)
+warning: direct3d9 vout display debug: created video sub-window
+warning: direct3d9 vout display debug: Vout EventThread running
+warning: direct3d9 vout display debug: D3D9 device caps 0x1BBEF0 / 0x51
+warning: direct3d9 vout display debug: Direct3d9 Device: NVIDIA GeForce GTX 750
+Ti 4318 4992 162
+[New Thread 9544.0x11d4]
+warning: direct3d9 vout display warning: trying surface pixel format: NV12
+warning: direct3d9 vout display debug: selected surface pixel format is NV12
+warning: main vout display debug: VoutDisplayEvent 'resize' 656x518
+warning: direct3d9 vout display debug: Direct3D9 scene created successfully
+warning: direct3d9 vout display debug: Direct3D9 device adapter successfully ini
+tialized
+warning: main vout display debug: using vout display module "direct3d9"
+warning: main vout display debug: A filter to adapt decoder DX11 to display NV12
+ is needed
+warning: main filter debug: looking for video converter module matching "any": 2
+4 candidates
+warning: main filter debug: using video converter module "d3d11_filters"
+warning: main vout display debug: Filter 'd3d11_filters' (02d68898) appended to
+chain
+warning: main video output debug: original format sz 640x480, of (0,0), vsz 640x
+480, 4cc DX11, sar 1:1, msk r0x0 g0x0 b0x0
+warning: main spu text debug: removing module "freetype"
+warning: main vout display debug: VoutDisplayEvent 'resize' 848x548
+warning: main spu text debug: looking for text renderer module matching "any": 3
+ candidates
+warning: main vout display debug: auto hiding mouse cursor
+warning: drawable window warning: unsupported control query 3
+warning: freetype spu text warning: DirectWrite initialization failed. Falling b
+ack to GDI/Uniscribe
+warning: main spu text debug: using text renderer module "freetype"
+warning: main generic debug: looking for hw decoder module matching "any": 2 can
+didates
+[New Thread 9544.0x1fec]
+[Thread 9544.0x1fec exited with code 0]
+warning: d3d11va generic debug: Incompatible feature level 9300
+warning: d3d11va generic error: D3D11CreateDevice failed. (hr=0x80004001)
+warning: d3d11va generic error: Failed to create device
+warning: main generic debug: no hw decoder modules matched
+warning: avcodec decoder debug: trying format dxva2_vld
+warning: main filter debug: removing module "d3d11_filters"
+warning: main vout display debug: Filter 02d68898 removed from chain
+warning: main vout display debug: removing module "direct3d9"
+warning: direct3d9 vout display debug: Direct3D9 scene released successfully
+[New Thread 9544.0x2508]
+[Thread 9544.0x11d4 exited with code 0]
+[Thread 9544.0x2508 exited with code 0]
+warning: direct3d9 vout display error: SetThumbNailClip failed: 0x800706f4
+warning: direct3d9 vout display debug: Win32 Vout EventThread terminating
+warning: direct3d9 vout display debug: Win32VoutCloseWindow
+warning: direct3d9 vout display debug: WinProc WM_DESTROY
+[Thread 9544.0x203c exited with code 0]
+warning: main video output debug: deinterlace -1, mode auto, is_needed 0
+warning: main video output debug: Opening vout display wrapper
+warning: main vout display debug: looking for vout display module matching "any"
+: 12 candidates
+warning: direct3d11 vout display debug: creating Vout EventThread
+[New Thread 9544.0x2b24]
+warning: direct3d11 vout display debug: Win32VoutCreateWindow
+warning: main vout display debug: VoutDisplayEvent 'resize' 640x480
+warning: direct3d11 vout display debug: inclinometer not found. (hr=0x80070490)
+warning: direct3d11 vout display debug: created video sub-window
+warning: direct3d11 vout display debug: Vout EventThread running
+[New Thread 9544.0xb5c]
+[Thread 9544.0xb5c exited with code 0]
+[New Thread 9544.0x2aec]
+[Thread 9544.0x2aec exited with code 0]
+warning: direct3d11 vout display debug: Incompatible feature level 9300
+warning: direct3d11 vout display error: Could not Create the D3D11 device. (hr=0
+x80004001)
+warning: direct3d11 vout display error: Direct3D11 could not be opened
+warning: direct3d11 vout display debug: Direct3D11 resources destroyed
+warning: direct3d11 vout display debug: Direct3D11 device adapter closed
+warning: direct3d11 vout display error: SetThumbNailClip failed: 0x800706f4
+warning: direct3d11 vout display debug: Win32 Vout EventThread terminating
+warning: direct3d11 vout display debug: Win32VoutCloseWindow
+warning: direct3d11 vout display debug: WinProc WM_DESTROY
+[Thread 9544.0x2b24 exited with code 0]
+[New Thread 9544.0x2608]
+[Thread 9544.0x2608 exited with code 0]
+warning: direct3d9 vout display debug: Using Direct3D9 Extended API!
+warning: direct3d9 vout display debug: creating Vout EventThread
+[New Thread 9544.0x28dc]
+warning: direct3d9 vout display debug: Win32VoutCreateWindow
+warning: main vout display debug: VoutDisplayEvent 'resize' 640x480
+warning: direct3d9 vout display debug: inclinometer not found. (hr=0x80070490)
+warning: direct3d9 vout display debug: created video sub-window
+warning: direct3d9 vout display debug: Vout EventThread running
+warning: direct3d9 vout display debug: D3D9 device caps 0x1BBEF0 / 0x51
+warning: direct3d9 vout display debug: Direct3d9 Device: NVIDIA GeForce GTX 750
+Ti 4318 4992 162
+[New Thread 9544.0x1f60]
+warning: direct3d9 vout display warning: trying surface pixel format: DXA9
+warning: direct3d9 vout display debug: selected surface pixel format is DXA9
+warning: main vout display debug: VoutDisplayEvent 'resize' 656x518
+warning: direct3d9 vout display debug: Direct3D9 scene created successfully
+warning: direct3d9 vout display debug: Direct3D9 device adapter successfully ini
+tialized
+warning: main vout display debug: using vout display module "direct3d9"
+warning: main video output debug: original format sz 640x480, of (0,0), vsz 640x
+480, 4cc DXA9, sar 1:1, msk r0x0 g0x0 b0x0
+warning: main generic debug: reusing provided vout
+warning: main generic debug: looking for hw decoder module matching "any": 2 can
+didates
+warning: main vout display debug: VoutDisplayEvent 'resize' 848x548
+warning: main vout display debug: auto hiding mouse cursor
+warning: drawable window warning: unsupported control query 3
+warning: dxva2 generic debug: Using Direct3D9 Extended API!
+warning: dxva2 generic debug: Reusing Direct3D9 device
+warning: dxva2 generic debug: CreateDevice succeed
+warning: dxva2 generic debug: OurDirect3DCreateDeviceManager9 Success!
+warning: dxva2 generic debug: obtained IDirect3DDeviceManager9
+warning: dxva2 generic debug: - 'MPEG-2 & MPEG-1 variable-length decoder' is sup
+ported
+warning: dxva2 generic debug: - 'MPEG-2 variable-length decoder' is supported
+warning: dxva2 generic debug: - 'MPEG-1 variable-length decoder, no D pictures'
+is supported
+warning: dxva2 generic debug: - 'VC-1 variable-length decoder' is supported
+warning: dxva2 generic debug: - 'VC-1 variable-length decoder' is supported
+warning: dxva2 generic debug: - 'Unknown decoder 0x32fcfe3f-0xde46-0x4a49-0x861b
+ac71110649d5' is supported
+warning: dxva2 generic debug: - 'H.264 stereo high profile, mbs flag set' is sup
+ported
+warning: dxva2 generic debug: - 'H.264 stereo high profile' is supported
+warning: dxva2 generic debug: - 'H.264 variable-length decoder, no film grain te
+chnology' is supported
+warning: dxva2 generic debug: - 'HEVC Main profile' is supported
+warning: dxva2 generic debug: - 'MPEG-4 Part 2 variable-length decoder, Simple P
+rofile' is supported
+warning: dxva2 generic debug: - 'MPEG-4 Part 2 variable-length decoder, Simple&A
+dvanced Profile, no GMC' is supported
+warning: dxva2 generic debug: - 'MPEG-4 Part 2 nVidia bitstream decoder' is supp
+orted
+warning: dxva2 generic debug: - 'Unknown decoder 0x33fcfe41-0xde46-0x4a49-0x861b
+ac71110649d5' is supported
+warning: dxva2 generic debug: - 'Unknown decoder 0x6affd11e-0x1d96-0x42b1-0xa215
+93a31f09a53d' is supported
+warning: dxva2 generic debug: - 'Unknown decoder 0x914c84a3-0x4078-0x4fa9-0x984c
+e2f262cb5c9c' is supported
+warning: dxva2 generic debug: Trying to use 'HEVC Main profile' as input
+warning: dxva2 generic debug: NV12 is supported for output
+warning: dxva2 generic debug: Using decoder output 'NV12'
+warning: dxva2 generic warning: surface dimensions (640x512) differ from avcodec
+ dimensions (640x480)
+warning: dxva2 generic debug: va_pool_SetupDecoder id 173 640x480 count: 27
+warning: dxva2 generic debug: IDirectXVideoAccelerationService_CreateSurface suc
+ceed with 27 surfaces (640x512)
+warning: dxva2 generic debug: we got 1 decoder configurations
+warning: dxva2 generic debug: configuration[0] ConfigBitstreamRaw 1
+[New Thread 9544.0x2720]
+[New Thread 9544.0x2510]
+warning: dxva2 generic debug: IDirectXVideoDecoderService_CreateVideoDecoder suc
+ceed
+warning: main generic debug: using hw decoder module "dxva2"
+warning: avcodec decoder: Using DXVA2 (NVIDIA GeForce GTX 750 Ti, vendor NVIDIA(
+4318), device 4992, revision 162) for hardware decoding
+warning: hevc packetizer: Waiting for VPS/SPS/PPS
+warning: hevc packetizer: Waiting for VPS/SPS/PPS
+warning: hevc packetizer: Waiting for VPS/SPS/PPS
+warning: hevc packetizer: Waiting for VPS/SPS/PPS
+warning: hevc packetizer: Waiting for VPS/SPS/PPS
+warning: hevc packetizer: Waiting for VPS/SPS/PPS
+warning: hevc packetizer: Waiting for VPS/SPS/PPS
+warning: hevc packetizer: Waiting for VPS/SPS/PPS
+warning: hevc packetizer: Waiting for VPS/SPS/PPS
+warning: main decoder debug: Received first picture
+[New Thread 9544.0x1d24]
+warning: main input debug: Decoder wait done in 28001 ms
+warning: main video output warning: picture is too late to be displayed (missing
+ 70 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 42 ms)
+warning: main video output debug: picture might be displayed late (missing 12 ms
+)
+warning: avcodec decoder warning: More than 11 late frames, dropping frame
+warning: avcodec decoder warning: More than 11 late frames, dropping frame
+warning: main video output warning: picture is too late to be displayed (missing
+ 27971 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27945 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27916 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27889 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27864 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27834 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27805 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27778 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27752 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27721 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27695 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27667 ms)
+warning: main video output warning: picture is too late to be displayed (missing
+ 27643 ms)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: avcodec decoder error: more than 5 seconds of late video -> dropping fr
+ame (computer too slow ?)
+warning: main video output debug: picture might be displayed late (missing 9 ms)
+
+warning: main video output debug: picture might be displayed late (missing 0 ms)
+
+warning: main video output debug: picture might be displayed late (missing 0 ms)
+
+warning: main video output debug: picture might be displayed late (missing 1 ms)
+
+warning: main video output debug: picture might be displayed late (missing 1 ms)
+
+w
