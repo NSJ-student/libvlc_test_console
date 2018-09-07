@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <Windows.h>
 typedef int ssize_t;
 #include <vlc/vlc.h>
 
+// library version 2.2.8
+char capture_name[255];
 const char *media_name = "test";
 const char *url = "rtsp://192.168.10.192:8554/test";
 const char *sout  = ":sout=#std{access=file,mus=mp4,dst='D:/Projects/K-7542/backup/player3/video/video5.mp4'}";
@@ -14,7 +17,7 @@ const char *sout5 = ":network-caching=300";
 const char *sout6 = ":live-caching=1000";
 const char *sout7 = ":sout=#duplicate{dst=std{access=file,mux=mp4,dst='D:/Projects/K-7542/backup/player3/video/video5.mp4'}}";
 const char *sout8 = ":sout=#duplicate{dst=display,dst=std{access=file,mux=mp4,dst='D:/Projects/K-7542/backup/player3/video/video5.mp4'}}";
-const char *test_sout = ":sout=#transcode{vcodec=h264}:duplicate{dst=display,dst=std{access=file,mux=mp4,dst='D:/Projects/K-7542/backup/player3/video/video6.mp4'}}";
+const char *sout9 = ":sout=#transcode{vcodec=h264}:duplicate{dst=display,dst=std{access=file,mux=mp4,dst='D:/Projects/K-7542/backup/player3/video/video6.mp4'}}";
 const char *const vlc_args[] = {
 	"avcodec-hw=none" }; 
 libvlc_media_stats_t stats;
@@ -28,15 +31,16 @@ int main(int argc, char* argv[])
 	libvlc_media_t *m_record;
 	libvlc_state_t status;
 	char input;
+	int capture_number = 0;
 
 	/* Load the VLC engine */
-	inst = libvlc_new(1, vlc_args);
+	inst = libvlc_new(0, NULL);
 //	inst = libvlc_new(sizeof(vlc_args) / sizeof(vlc_args[0]), vlc_args);
 
 	/* Create a new item */
 //	m = libvlc_media_new_location(inst, "https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm");
 //	m = libvlc_media_new_location(inst, "rtsp://192.168.10.192:8554/test");
-	//m = libvlc_media_new_path (inst, "/path/to/test.mov");
+//	m = libvlc_media_new_path (inst, "/path/to/test.mov");
 	m = libvlc_media_new_path(inst, "D:\\Projects\\Byton\\test.sdp");
 	m_record = libvlc_media_new_path(inst, "D:\\Projects\\Byton\\test.sdp");
 
@@ -88,32 +92,17 @@ int main(int argc, char* argv[])
 				printf("can't load satatistics\r\n");
 			}
 		}
-		else if (input == 'o')
-		{
-			libvlc_media_player_pause(mp);
-			libvlc_media_add_option(m, sout4);
-			libvlc_media_add_option(m, sout);
-			libvlc_media_player_play(mp);
-			printf("add option\r\n");
-		}
 		else if (input == 'c')
 		{
-			if (libvlc_video_take_snapshot(mp, 0, "test1.bmp", 640, 480) == 0)
+			sprintf_s(capture_name, "test%d.bmp", capture_number);
+			if (libvlc_video_take_snapshot(mp, 0, capture_name, 640, 480) == 0)
 			{
-				printf("capture1 success\r\n");
+				printf("capture1 success %d\r\n", capture_number);
+				capture_number++;
 			}
 			else
 			{
-				printf("capture1 fail\r\n");
-			}
-
-			if (libvlc_video_take_snapshot(mp_record, 0, "test2.bmp", 640, 480) == 0)
-			{
-				printf("capture2 success\r\n");
-			}
-			else
-			{
-				printf("capture2 fail\r\n");
+				printf("capture1 fail %d\r\n", capture_number);
 			}
 		}
 		else if (input == 'r')
