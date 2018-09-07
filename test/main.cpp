@@ -7,20 +7,13 @@ typedef int ssize_t;
 
 // library version 2.2.8
 char capture_name[255];
-const char *media_name = "test";
+char record_option[255];
+char record_name[255];
 const char *url = "rtsp://192.168.10.192:8554/test";
-const char *sout  = ":sout=#std{access=file,mus=mp4,dst='D:/Projects/K-7542/backup/player3/video/video5.mp4'}";
-const char *sout2 = ":sout=#duplicate{dst=display,dst=std{access=file,mux=mp4,dst='D:/Projects/K-7542/backup/player3/video/video5.mp4'}}";
-const char *sout3 = ":avcodec-hw=none";
-const char *sout4 = ":sout-all";
-const char *sout5 = ":network-caching=300";
-const char *sout6 = ":live-caching=1000";
-const char *sout7 = ":sout=#duplicate{dst=std{access=file,mux=mp4,dst='D:/Projects/K-7542/backup/player3/video/video5.mp4'}}";
-const char *sout8 = ":sout=#duplicate{dst=display,dst=std{access=file,mux=mp4,dst='D:/Projects/K-7542/backup/player3/video/video5.mp4'}}";
-const char *sout9 = ":sout=#transcode{vcodec=h264}:duplicate{dst=display,dst=std{access=file,mux=mp4,dst='D:/Projects/K-7542/backup/player3/video/video6.mp4'}}";
-const char *const vlc_args[] = {
-	"avcodec-hw=none" }; 
+const char *sout  = ":sout=#std{access=file,mus=mp4,dst='D:/Projects/K-7542/backup/player3/video/";
 libvlc_media_stats_t stats;
+
+void set_record_option(libvlc_media_t *m_r, int number);
 
 int main(int argc, char* argv[])
 {
@@ -32,6 +25,7 @@ int main(int argc, char* argv[])
 	libvlc_state_t status;
 	char input;
 	int capture_number = 0;
+	int record_number = 0;
 
 	/* Load the VLC engine */
 	inst = libvlc_new(0, NULL);
@@ -47,9 +41,8 @@ int main(int argc, char* argv[])
 	/* Create a media player playing environement */
 	mp = libvlc_media_player_new_from_media(m);
 	mp_record = libvlc_media_player_new_from_media(m_record);
-	libvlc_media_add_option(m_record, ":sout-all");
-	libvlc_media_add_option(m_record, sout);
-	libvlc_media_add_option(m_record, ":sout-keep");
+	set_record_option(m_record, record_number);
+	record_number++;
 
 #if 0
 	/* This is a non working code that show how to hooks into a window,
@@ -122,9 +115,12 @@ int main(int argc, char* argv[])
 		{
 			if (libvlc_media_get_state(m_record) != 3)
 			{
+				set_record_option(m_record, record_number);
+
 				/* play the media_player */
 				libvlc_media_player_play(mp_record);
-				printf("start recording\r\n");
+				printf("start recording %d\r\n", record_number);
+				record_number++;
 			}
 			else
 			{
@@ -153,4 +149,15 @@ int main(int argc, char* argv[])
 
 
 	return 0;
+}
+
+void set_record_option(libvlc_media_t *m_r, int number)
+{
+	strcpy_s(record_option, 255, sout);
+	sprintf_s(record_name, "test%d.mp4", number);
+	strcpy_s(record_option + strlen(record_option), 255, record_name);
+	strcpy_s(record_option + strlen(record_option), 255, "'}");
+	libvlc_media_add_option(m_r, ":sout-all");
+	libvlc_media_add_option(m_r, record_option);
+	libvlc_media_add_option(m_r, ":sout-keep");
 }
