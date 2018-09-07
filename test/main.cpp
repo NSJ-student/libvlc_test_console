@@ -10,7 +10,7 @@ char capture_name[255];
 char record_option[255];
 char record_name[255];
 const char *url = "rtsp://192.168.10.192:8554/test";
-const char *sout  = ":sout=#std{access=file,mus=mp4,dst='D:/Projects/K-7542/backup/player3/video/";
+const char *sout  = ":sout=#std{access=file,mus=mp4,dst='D:/";
 libvlc_media_stats_t stats;
 
 void set_record_option(libvlc_media_t *m_r, int number);
@@ -27,6 +27,12 @@ int main(int argc, char* argv[])
 	int capture_number = 0;
 	int record_number = 0;
 
+	printf("------ COMMAND\r\n");
+	printf("r: stop and save recording\r\n");
+	printf("n: start recording\r\n");
+	printf("c: capture\r\n");
+	printf("q: quit\r\n");
+	printf("--------------\r\n");
 	/* Load the VLC engine */
 	inst = libvlc_new(0, NULL);
 //	inst = libvlc_new(sizeof(vlc_args) / sizeof(vlc_args[0]), vlc_args);
